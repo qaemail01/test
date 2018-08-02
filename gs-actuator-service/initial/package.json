@@ -1,0 +1,33 @@
+{
+  "name": "initial",
+  "version": "1.0.0",
+  "description": "Blabla blaaaaaa",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -d"
+  },
+  "author": "Max",
+  "dependencies": {
+    "cucumber": "^4.2.1",
+    "angular": "1.5.8",
+    "angular-animate": "1.5.8",
+    "angular-cookies": "1.5.8",
+    "angular-deferred-bootstrap": "0.1.9",
+    "angular-input-modified": "2.4.2",
+    "angular-messages": "1.5.8",
+    "angular-resource": "1.5.8",
+    "angular-route": "1.5.8",
+    "angular-sanitize": "1.5.8",
+    "angular-tree-control": "0.2.21",
+    "angular-ui-ace": "0.2.3",
+    "angular-ui-bootstrap": "0.14.0",
+    "angular-ui-router": "0.2.18",
+    "angular-ui-tinymce": "0.0.19",
+    "lodash": "4.17.4",
+    "moment": "2.20.1",
+    "ng-spin": "1.0.2",
+    "restangular": "1.6.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  }
+}
