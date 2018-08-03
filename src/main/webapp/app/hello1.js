@@ -16,4 +16,4 @@ class ShoppingList extends React.Component {
     }
 }
 
-ReactDOM.render(<ShoppingList name="Max"/>, document.getElementById('app'));
+ReactDOM.render(<ShoppingList name="Maximus"/>, document.getElementById('app'));
