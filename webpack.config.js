@@ -11,7 +11,19 @@ module.exports = {
         path: __dirname + '/src/main/resources/static',
         filename: 'app.bundle.js'
     },
+    resolve: {
+        extensions: ['*', '.js', '.jsx']
+    },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.bundle.js' })
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.js?$/,
+                exclude: /node_modules/,
+                use: ['babel-loader']
+            }
+        ]
+    }
 };
