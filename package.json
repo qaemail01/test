@@ -32,7 +32,7 @@
     "angular-ui-bootstrap": "0.14.0",
     "angular-ui-router": "0.2.18",
     "angular-ui-tinymce": "0.0.19",
-    "lodash": "4.17.4",
+    "lodash": "4.17.5",
     "moment": "2.20.1",
     "ng-spin": "1.0.2",
     "restangular": "1.6.1",
