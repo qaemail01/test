@@ -7,32 +7,40 @@ class ShoppingList extends React.Component {
         this.state = {text: 'type here'};
         this.items = [{id: "1", text: "Instagram"}, {id:"2", text:"WhatsApp"}, {id:"3", text:"Oculus"}];
         this.handleChange = this.handleChange.bind(this);
+        this.getText = this.getText.bind(this);
     }
 
     handleChange(e) {
         this.setState({text : e.target.value});
     }
 
+    getText() {
+        return this.state.text === 'type here' ? 'John Doe' : this.state.text;
+    }
+
     render() {
         return (
             <div className="shopping-list">
-                <h1>Shopping List for {this.state.text}</h1>
+                <Timer/>
+                <h1>Shopping List for {this.getText()}</h1>
                 <ul>
                     {this.items.map(item => (
                         <li key={item.id}>{item.text}</li>
                     ))}
                 </ul>
+                <br/>
+                <label htmlFor="new-todo">
+                    What needs to be done?
+                </label>
+                <br/>
                 <input
                     id="new-todo"
                     onChange={this.handleChange}
-                    value={this.state.text}
-                />
+                    value={this.state.text}/>
             </div>
         );
     }
 }
-
-ReactDOM.render(<ShoppingList/>, document.getElementById('app'));
 
 class Timer extends React.Component {
     constructor(props) {
@@ -63,4 +71,4 @@ class Timer extends React.Component {
     }
 }
 
-ReactDOM.render(<Timer />, document.getElementById('timer'));
+ReactDOM.render(<ShoppingList/>, document.getElementById('app'));
